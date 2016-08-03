@@ -9,16 +9,20 @@ Android中文转拼音demo，极速！！！
 ##集成方法
 ####1.Androdi studio
 1.在工程的build.gradle下添加如下配置
+<code>
 allprojects {
 		repositories {
 			...
 			maven { url "https://jitpack.io" }
 		}
 	}
+</code>
 2.添加依赖
+<code>
 dependencies {
 	        compile 'com.github.heygays:Cn2Py:v1.0'
 	}
+</code>
 ####2.Eclipse
 在demo 工程的lib下有jar
 
