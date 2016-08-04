@@ -8,7 +8,7 @@ import android.view.View;
 import android.widget.EditText;
 import android.widget.TextView;
 
-import com.sly.pylibrary.Cn2Py;
+import com.sly.utils.Cn2Py;
 
 import static com.sly.cn2py.R.id.ac_main_edit;
 
