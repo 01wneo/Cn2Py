@@ -25,7 +25,7 @@ dependencies{
 	}
 ```
 ####2.Eclipse
-在demo 工程的lib下有jar
+在demo 工程的app目录下有jar
 
 ##代码中调用
 
