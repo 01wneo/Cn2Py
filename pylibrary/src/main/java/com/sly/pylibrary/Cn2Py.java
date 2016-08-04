@@ -42,6 +42,7 @@ public class Cn2Py {
         if (pyDicList == null) {
             readPyDicList();
         }
+        name = name.replace(" ", "");
         String indexChar = null;
         int uniCode = name.charAt(0);
         //a-z或者A-Z
@@ -70,12 +71,15 @@ public class Cn2Py {
         if (pyDicList == null) {
             readPyDicList();
         }
+        name = name.replace(" ", "");
         StringBuffer indexPinYin = new StringBuffer();
         for (int i = 0; i < name.length(); i++) {
             String n = name.substring(i, i + 1);
             indexPinYin.append(getRootChar(n) + ",");
         }
-        return indexPinYin.toString().toLowerCase();//小写
+        return indexPinYin.toString()
+                .substring(0, indexPinYin.length() - 1)
+                .toLowerCase();//小写
     }
 
     /**
@@ -88,6 +92,7 @@ public class Cn2Py {
         if (pyDicList == null) {
             readPyDicList();
         }
+        name = name.replace(" ", "");
         StringBuffer pinYinGroup = new StringBuffer();
         for (int i = 0; i < name.length(); i++) {
             String n = name.substring(i, i + 1);
@@ -99,6 +104,7 @@ public class Cn2Py {
                 pinYinGroup.append(n + ",");
             }
         }
-        return pinYinGroup.toString();
+        return pinYinGroup.toString()
+                .substring(0, pinYinGroup.length() - 1);
     }
 }
